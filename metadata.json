@@ -1,0 +1,6 @@
+{
+  "name": "HOS",
+  "description": "HyperOS 3 Icon Widgets for Android home screen customization",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

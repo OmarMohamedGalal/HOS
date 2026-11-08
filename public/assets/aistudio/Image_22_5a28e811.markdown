@@ -1,0 +1,186 @@
+---
+name: Luminous Squircle OS
+colors:
+  surface: '#121315'
+  surface-dim: '#121315'
+  surface-bright: '#38393b'
+  surface-container-lowest: '#0d0e10'
+  surface-container-low: '#1b1c1e'
+  surface-container: '#1f2022'
+  surface-container-high: '#292a2c'
+  surface-container-highest: '#343537'
+  on-surface: '#e3e2e5'
+  on-surface-variant: '#c0c6d6'
+  inverse-surface: '#e3e2e5'
+  inverse-on-surface: '#303033'
+  outline: '#8b91a0'
+  outline-variant: '#414754'
+  surface-tint: '#aac7ff'
+  primary: '#aac7ff'
+  on-primary: '#002f64'
+  primary-container: '#3e90ff'
+  on-primary-container: '#002958'
+  inverse-primary: '#005db8'
+  secondary: '#b0c6ff'
+  on-secondary: '#002d6e'
+  secondary-container: '#0068ed'
+  on-secondary-container: '#f2f3ff'
+  tertiary: '#ffb693'
+  on-tertiary: '#561f00'
+  tertiary-container: '#f26500'
+  on-tertiary-container: '#4c1a00'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#d6e3ff'
+  primary-fixed-dim: '#aac7ff'
+  on-primary-fixed: '#001b3e'
+  on-primary-fixed-variant: '#00468d'
+  secondary-fixed: '#d9e2ff'
+  secondary-fixed-dim: '#b0c6ff'
+  on-secondary-fixed: '#001945'
+  on-secondary-fixed-variant: '#00429b'
+  tertiary-fixed: '#ffdbcc'
+  tertiary-fixed-dim: '#ffb693'
+  on-tertiary-fixed: '#351000'
+  on-tertiary-fixed-variant: '#7a3000'
+  background: '#121315'
+  on-background: '#e3e2e5'
+  surface-variant: '#343537'
+typography:
+  headline-xl:
+    fontFamily: Outfit
+    fontSize: 36px
+    fontWeight: '600'
+    lineHeight: 44px
+  headline-lg:
+    fontFamily: Outfit
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+  headline-lg-mobile:
+    fontFamily: Outfit
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-md:
+    fontFamily: Outfit
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: 26px
+  headline-sm:
+    fontFamily: Outfit
+    fontSize: 18px
+    fontWeight: '500'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Outfit
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Outfit
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Outfit
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: Outfit
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 18px
+  label-md:
+    fontFamily: Outfit
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+  label-sm:
+    fontFamily: Outfit
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+rounded:
+  sm: 0.5rem
+  DEFAULT: 1rem
+  md: 1.5rem
+  lg: 2rem
+  xl: 3rem
+  full: 9999px
+spacing:
+  gutter: 0.75rem
+  margin: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.25rem
+---
+
+## Brand & Style
+
+This design system delivers a tactile, fluid dark-mode operating system interface. Rooted in deep cosmic obsidian canvases, it balances pure blacks with high-clarity typography and vibrant electric accents. The aesthetic marries ultra-refined squircle geometry with frosted translucent pill surfaces, creating an environment that feels light, fast, and physically intuitive.
+
+The target audience seeks precision, fluidity, and modern digital craft. Every touchpoint prioritizes immediate recognition through continuous-curvature containers, luminous status cues, and focused micro-interactions that evoke speed, balance, and quiet power.
+
+## Colors
+
+The palette is engineered around an OLED-optimized baseline with layered depth:
+- **Base Surfaces**: The foundational canvas rests at `#0B0C0E`. Elevated cards, sheets, and preview panels step up gradually into `#121316` and `#1A1C20`.
+- **Primary & Interactive Accents**: Electric cobalt `#0D84FF` and neon azure `#2979FF` command user focus, signaling active states, selection outlines, and interactive badges.
+- **System Utility Accent**: Tangelo orange `#FF6B00` serves as a dynamic utility marker (such as calculator equals badges, recording heads, and warnings).
+- **Text & Foreground**: Crisp white `#FFFFFF` drives primary legibility, stepped down to `#A0A5AD` for subtitles, secondary metrics, and deactivated controls.
+
+## Typography
+
+Typography centers on geometric clarity and open counters, mirroring contemporary mobile operating system typefaces. 
+
+Titles emphasize clean horizontal alignments and comfortable reading weights. Numeric values and compact pill labels are tracked closely for visual density, while navigation labels maintain generous vertical balance. Letter spacing on labels and captions remains neutral to slightly open to ensure immediate legibility against deep dark containers.
+
+## Layout & Spacing
+
+Layouts follow a handheld-first fluid grid optimized for thumb-reach zones:
+- **Mobile Grid**: 4 fluid columns with `margin: 1rem` and `gutter: 0.75rem` to support 1x1, 2x1, 1x2, and 2x2 widget matrices.
+- **Vertical Hierarchy**: 48px to 64px header bars accommodate dismiss and confirmation actions on opposite edges. The central canvas showcases high-fidelity interactive previews, while the lower third houses segmented selector cards.
+- **Rhythm**: Component spacing relies on strict multiples of 4px and 8px, keeping touch targets at a minimum of 44x44px.
+
+## Elevation & Depth
+
+Visual hierarchy is constructed through luminous tonal layering and translucent blurs rather than heavy drop shadows:
+- **Surface Level 0 (Base)**: `#0B0C0E` pure black floor.
+- **Surface Level 1 (Recessed Containers)**: `#121316` with a faint 1px inner stroke `rgba(255, 255, 255, 0.05)`.
+- **Surface Level 2 (Selectable Tiles)**: `#1A1C20` background with `backdrop-filter: blur(20px)` and subtle top highlight `rgba(255, 255, 255, 0.08)`.
+- **Surface Level 3 (Floating Preview Squircle)**: Solid `#FFFFFF` or high-contrast opaque container floating with an ambient glow: `box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45)`.
+- **Active State Ring**: Focused elements carry a continuous 2px stroke in `#0D84FF` with an optional exterior halo `box-shadow: 0 0 16px rgba(13, 132, 255, 0.35)`.
+
+## Shapes
+
+The geometry adheres to superellipses and continuous curvature (squircles) that define modern OS hardware and software harmony:
+- **Standard Cards & Tiles**: Smooth rounded corners using 24px squircle masks (`corner-smoothing: 60%`).
+- **Floating Controls & Action Buttons**: Fully rounded pill shapes (`border-radius: 9999px`).
+- **Widget Preview Cards**: Scale-dependent curvature transitioning smoothly from 20px on compact 1x1 icons to 32px on 2x2 cards.
+
+## Components
+
+### Buttons & Navigation Anchors
+- **Top Bar Actions**: Bare monochrome glyphs (`X` for close, checkmark for confirm) measuring 24px inside a 44px tap container, colored in pure `#FFFFFF`.
+- **Pill Primary Buttons**: Solid `#0D84FF` background with `#FFFFFF` medium text, 48px height, rounded full.
+
+### Widget & Size Selector Cards
+- **Base Tile**: Dark squircle container (`#16181C`) measuring 72x72px.
+- **Inner Representation Graphic**: Embedded solid slate pill (`#26282E`) illustrating the aspect ratio (1x1, 2x1, 1x2, 2x2).
+- **Selected State**: Outlined by a 2.5px ring of `#0D84FF` with a deep inset offset. The label below shifts to active `#0D84FF` bold text, while unselected labels remain muted `#8E929A`.
+
+### Floating Preview Canvas
+- **Central Stage**: Generous floating white squircle (`#FFFFFF`) containing high-contrast math glyphs or utility graphics with soft inner accents (`#FF6B00`).
+
+### Checkboxes, Radios & Switches
+- **Switches**: Continuous-pill track (`#2A2C32` inactive, `#0D84FF` active) with a smooth circular white thumb gliding on an iOS/HyperOS spring curve.
+- **Selection Badges**: Embedded blue circular checkmarks with high-contrast `#FFFFFF` ticks.
+
+### Input Fields & Search Bars
+- **Pill Search Bar**: Translucent `#181A1F` background, 44px height, full pill radius, housing subtle `#727782` placeholder typography alongside a magnifying lens glyph.

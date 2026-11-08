@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Android 11+ (API 30+) Package Visibility Declarations for the 9 Supported System Apps -->
+    <queries>
+        <package android:name="com.android.settings" />
+        <package android:name="com.miui.securitysetting" />
+        <package android:name="com.miui.securitycenter" />
+        <package android:name="com.miui.calculator" />
+        <package android:name="com.google.android.calculator" />
+        <package android:name="com.android.calculator2" />
+        <package android:name="com.mi.android.globalFileexplorer" />
+        <package android:name="com.android.fileexplorer" />
+        <package android:name="com.google.android.apps.nbu.files" />
+        <package android:name="com.android.documentsui" />
+        <package android:name="com.google.android.documentsui" />
+        <package android:name="com.miui.gallery" />
+        <package android:name="com.google.android.apps.photos" />
+        <package android:name="com.android.gallery3d" />
+        <package android:name="com.android.camera" />
+        <package android:name="com.android.camera2" />
+        <package android:name="com.google.android.GoogleCamera" />
+        <package android:name="com.miui.notes" />
+        <package android:name="com.google.android.keep" />
+        <package android:name="com.android.thememanager" />
+        <package android:name="com.google.android.apps.wallpaper" />
+        <package android:name="com.android.soundrecorder" />
+        <package android:name="com.google.android.apps.recorder" />
+
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.settings.SETTINGS" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Zero-UI Trampoline Activity for Launching System Apps from Home Screen Widgets -->
+        <activity
+            android:name=".widget.HosWidgetLaunchActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- HyperOS 3 1x1 Compact Widget Provider -->
+        <receiver
+            android:name=".widget.HosWidget1x1Provider"
+            android:exported="true"
+            android:label="HOS • 1×1 Icon Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hos_widget_1x1_info" />
+        </receiver>
+
+        <!-- HyperOS 3 2x2 Square Widget Provider -->
+        <receiver
+            android:name=".widget.HosWidget2x2Provider"
+            android:exported="true"
+            android:label="HOS • 2×2 Icon Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hos_widget_2x2_info" />
+        </receiver>
+
+        <!-- HyperOS 3 2x1 Horizontal Widget Provider -->
+        <receiver
+            android:name=".widget.HosWidget2x1Provider"
+            android:exported="true"
+            android:label="HOS • 2×1 Icon Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hos_widget_2x1_info" />
+        </receiver>
+
+        <!-- HyperOS 3 1x2 Vertical Widget Provider -->
+        <receiver
+            android:name=".widget.HosWidget1x2Provider"
+            android:exported="true"
+            android:label="HOS • 1×2 Icon Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hos_widget_1x2_info" />
+        </receiver>
+
+        <!-- Pin Widget Confirmation Callback Receiver -->
+        <receiver
+            android:name=".widget.HosWidgetPinReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.widget.ACTION_WIDGET_PINNED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Device Reboot & App Update Widget Restoration Receiver -->
+        <receiver
+            android:name=".widget.HosBootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

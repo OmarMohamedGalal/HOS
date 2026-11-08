@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">HOS</string>
+    <string name="hos_brand_title">HOS</string>
+    <string name="hos_brand_subtitle">HyperOS 3 Icon Widgets</string>
+    <string name="hos_os_badge">HyperOS 3</string>
+    <string name="hos_os_badge_v2">HyperOS 2</string>
+    <string name="hos_os_badge_v4">HyperOS 4</string>
+    <string name="hos_slider_2_short">2</string>
+    <string name="hos_slider_3_short">3</string>
+    <string name="hos_slider_4_short">4</string>
+    <string name="hos_slider_2_full">HyperOS 2</string>
+    <string name="hos_slider_3_full">HyperOS 3</string>
+    <string name="hos_slider_4_full">HyperOS 4</string>
+    <string name="nav_my_widgets">My Widgets</string>
+    <string name="nav_settings">Settings</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_back">Back</string>
+    <string name="profile_badge">HyperOS 3</string>
+
+    <!-- Search & Library -->
+    <string name="search_placeholder">Search HyperOS 3 icons…</string>
+    <string name="search_placeholder_v2">Search HyperOS 2 icons…</string>
+    <string name="search_placeholder_v4">Search HyperOS 4 icons…</string>
+    <string name="clear_search">Clear search</string>
+    <string name="category_all">All</string>
+    <string name="category_system">System</string>
+    <string name="category_tools">Tools</string>
+    <string name="category_media">Media</string>
+    <string name="category_communication">Connect</string>
+    <string name="empty_search_title">No matching icons</string>
+    <string name="empty_search_subtitle">Try searching by app name or category</string>
+
+    <!-- Customization Screen -->
+    <string name="customize_size_section_title">WIDGET SIZE</string>
+    <string name="customize_preview_badge">LIVE LAUNCHER PREVIEW</string>
+    <string name="add_to_home_screen">Add to Home screen</string>
+    <string name="test_launch_app">Test Launch</string>
+    <string name="size_desc_2x2">Square • 2 × 2 Launcher Cells</string>
+    <string name="size_desc_2x1">Horizontal • 2 × 1 Launcher Cells</string>
+    <string name="size_desc_1x2">Vertical • 1 × 2 Launcher Cells</string>
+    <string name="pin_request_sent">Confirm placement in your launcher to add the %1$s (%2$s) widget.</string>
+    <string name="pin_confirmed_toast">%1$s (%2$s) widget added to Home Screen</string>
+    <string name="pin_unsupported_title">Manual Widget Placement</string>
+    <string name="pin_unsupported_message">Your current launcher does not support one-tap widget pinning. Long-press on your Home Screen, tap Widgets, and select HOS (%1$s) to place %2$s.</string>
+    <string name="action_got_it">Got it</string>
+
+    <!-- Widget Descriptions -->
+    <string name="widget_desc_2x2">HyperOS 3 2×2 Square App Icon Widget</string>
+    <string name="widget_desc_2x1">HyperOS 3 2×1 Horizontal App Icon Widget</string>
+    <string name="widget_desc_1x2">HyperOS 3 1×2 Vertical App Icon Widget</string>
+    <string name="widget_subtitle_hyperos">HyperOS 3 System App</string>
+    <string name="widget_subtitle_short">HyperOS 3</string>
+
+    <!-- My Widgets Screen -->
+    <string name="my_widgets_subtitle">Active &amp; configured HyperOS 3 icon widgets</string>
+    <string name="my_widgets_sync_action">Sync Widgets</string>
+    <string name="my_widgets_empty_title">No Active Widgets Yet</string>
+    <string name="my_widgets_empty_subtitle">Select any HyperOS 3 system icon from the library, pick 2×2, 2×1, or 1×2, and tap Add to Home Screen.</string>
+    <string name="my_widgets_browse_icons">Browse Icon Library</string>
+    <string name="widget_status_active">Active on Launcher</string>
+    <string name="widget_status_pending">Saved Configuration</string>
+    <string name="widget_app_available">System App Ready</string>
+    <string name="widget_app_fallback">Fallback Intent</string>
+    <string name="action_open_app">Open App</string>
+    <string name="action_remove_widget">Remove</string>
+    <string name="widget_removed_toast">Removed %1$s widget configuration</string>
+    <string name="widgets_synced_toast">Synchronized with Android AppWidgetManager</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_section_widget_display">WIDGET APPEARANCE</string>
+    <string name="settings_show_2x2_label_title">Show Label on 2×2 Widgets</string>
+    <string name="settings_show_2x2_label_subtitle">Display a frosted pill app name badge on 2×2 square widgets</string>
+    <string name="settings_default_size_title">Default Widget Size</string>
+    <string name="settings_default_size_subtitle">Preselected layout when opening icon customization</string>
+    <string name="settings_section_system">LAUNCHER &amp; SYSTEM DIAGNOSTICS</string>
+    <string name="settings_pin_support_title">Direct Widget Pinning</string>
+    <string name="settings_pin_supported">Supported by active launcher</string>
+    <string name="settings_pin_unsupported">Manual picker required on this launcher</string>
+    <string name="settings_refresh_widgets_title">Refresh All Home Screen Widgets</string>
+    <string name="settings_refresh_widgets_subtitle">Force RemoteViews re-render across all active widget instances</string>
+    <string name="settings_refresh_done">All active widgets refreshed</string>
+    <string name="settings_clear_stale_title">Clean Up Stale Configurations</string>
+    <string name="settings_clear_stale_subtitle">Remove saved configurations no longer bound to a launcher widget ID</string>
+    <string name="settings_about_title">HOS — HyperOS 3 Icon Widgets</string>
+    <string name="settings_about_subtitle">Version 3.0 • Luminous Squircle OS Edition • Native AppWidget Engine</string>
+
+    <!-- App Launch Feedback -->
+    <string name="launch_error_no_app">Could not find a default %1$s application on this device.</string>
+</resources>
